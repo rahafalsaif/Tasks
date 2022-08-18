@@ -50,7 +50,7 @@ struct BillionaireDetailView: View {
                     .foregroundColor(.white)
                     .cornerRadius(10)
             })
-        }
+        }.padding()
     }
 }
 
