@@ -45,7 +45,7 @@ struct BillionaireDetailView: View {
                 Text("watch now")
                     .bold()
                     .font(.title2)
-                    .frame(width: 280, height: 50)
+                    .frame(width: 270, height: 50)
                     .background(Color(.systemRed))
                     .foregroundColor(.white)
                     .cornerRadius(10)
