@@ -24,13 +24,31 @@ struct BillionaireListView: View {
             
             List(results, id: \.id) { billi in
                 HStack{
-
-                    Image(billi.squareImage!)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(height: 70)
-                        .cornerRadius(4)
-                        .padding(.vertical,4)
+                    AsyncImage(url: URL(string: billi.squareImage!)) { phase in
+                        if let image = phase.image {
+                            image // Displays the loaded image.
+                                .resizable()
+                                .scaledToFit()
+                        } else if phase.error != nil {
+                            Color.gray // Indicates an error.
+                        } else {
+                            Color.blue // Acts as a placeholder.
+                        }
+                    }
+//                    AsyncImage(url: URL(string: billi.squareImage!))
+////                    { phase in
+////                        if let image = phase.squareImage {
+////                            squareImage.resizable()
+////                        }
+////
+////                    }
+////                    Image(billi.squareImage!)
+//                        .resizable()
+//                        .scaledToFit()
+////                        .frame(height: 70 )
+//                        .frame(width: 70, height: 70, alignment:.leading)
+//                        .cornerRadius(4)
+//                        .padding(.vertical,4)
 
                     VStack(alignment: .leading, spacing: 6){
                         Text(billi.person.name)
@@ -60,12 +78,13 @@ struct BillionaireListView: View {
                 NavigationLink(destination: BillionaireDetailView(Billionaire:  billi)
                                , label: {
 
-                    BillionaireCell(Billionaire: Billi)
-                })
+//                    BillionaireCell(Billionaire: Billi)
+                }
+                )
                 
             }
             
-            .navigationTitle("Billionaire top 5")
+            .navigationTitle("Billionaire top 100")
             .onAppear(perform: loadData)
         }
   

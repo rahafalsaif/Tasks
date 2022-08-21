@@ -15,7 +15,7 @@ struct BillionaireDetailView: View {
             Image(Billionaire.person.squareImage ?? "")
                 .resizable()
                 .scaledToFit()
-                .frame(height: 250)
+                .frame(height: 180)
                 .cornerRadius(12)
             Text(Billionaire.person.name)
                 .font(.title2)
@@ -38,8 +38,10 @@ struct BillionaireDetailView: View {
             }
             Text(Billionaire.bio)
                 .padding()
-            Text(String(Billionaire.finalWorth))
-                .padding()
+
+            Label("\(Billionaire.finalWorth)", systemImage: "dollarsign.circle")
+                .font(.subheadline)
+//                .foregroundColor(.secondary)
             Spacer()
             Link(destination:URL(string: Billionaire.uri)!, label:  {
                 Text("watch now")
