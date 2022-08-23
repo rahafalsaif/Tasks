@@ -6,96 +6,96 @@
 //
 
 import SwiftUI
+//
+//struct Billionaire: Identifiable {
+//    let id = UUID()
+//    let imageName: String
+//    let FullName: String
+//    let NetWorth: String
+//    let Country: String
+//    let City:String
+//    let Age: String
+//    let Source: String
+//    let Industry: String
+//    let Bios: String
+//    let viewCount: Int
+//    let uploadDate: String
+//    let url: URL
+//}
 
-struct Billionaire: Identifiable {
-    let id = UUID()
-    let imageName: String
-    let FullName: String
-    let NetWorth: String
-    let Country: String
-    let City:String
-    let Age: String
-    let Source: String
-    let Industry: String
-    let Bios: String
-    let viewCount: Int
-    let uploadDate: String
-    let url: URL
-}
-
-struct BillionaireList {
-    
-    static let topTen = [
-        Billionaire(imageName: "Image1",
-                    FullName: "Elon Musk",
-                    NetWorth: "265.69 B",
-                    Country: "United States",
-                    City: "Austin, Texas",
-                    Age:"51",
-                    Source:" Tesla, SpaceX",
-                    Industry:"Automotion",
-                    Bios: "CEO, Tesla",
-                    viewCount:162897,
-                    
-                    uploadDate: "February 17, 2019",
-                    url: URL(string: "https://www.forbes.com/profile/elon-musk")!),
-        
-        Billionaire(imageName: "Image2",
-                    FullName: "Bernard Arnault & family",
-                    NetWorth: "172.17 B",
-                    Country: "France",
-                    City: "Paris, France",
-                    Age: "73",
-                    Source:"LVMH",
-                    Industry: "Fashion",
-                    Bios:"Chairman And CEO, LVMH Moët Hennessy Louis Vuitton",
-                    
-                    viewCount: 162897,
-                    uploadDate: "May 6, 2017",
-                    url: URL(string: "https://www.forbes.com/profile/bernard")!),
-        
-        Billionaire(imageName: "Image3",
-                    FullName: "Jeff Bezos",
-                    NetWorth: "168.02 B",
-                    Country: "United States",
-                    City: "Seattle, Washington",
-                    Age: "58",
-                    Source:"Amazon",
-                    Industry: "Technology",
-                    Bios:"Chairman And Founder, Amazon",
-                    viewCount: 162897,
-                    uploadDate: "May 19, 2017",
-                    url: URL(string: "https://www.forbes.com/profile/jeff-bezos")!),
-        
-        Billionaire(imageName: "Image4",
-                    FullName: "SGautam Adani & family",
-                    NetWorth: "131.12 B",
-                    Country: "India",
-                    City: "Ahmedabad, India",
-                    Age: "60",
-                    Source:"infrastructure, commodities",
-                    Industry: "infrastructure",
-                    Bios:"Gautam Adani controls Mundra Port, India's largest, in his home state of Gujarat",
-                    viewCount: 162897,
-                    uploadDate: "May 21, 2017",
-                    url: URL(string: "https://youtu.be/DBWu6TnhLeY")!),
-        
-        Billionaire(imageName: "Image5",
-                    FullName: "Bill Gates",
-                    NetWorth: "114.23 B",
-                    Country: "United States",
-                    City: "Medina, Washington",
-                    Age: "67",
-                    Source:"Microsoft",
-                    Industry: "Technology",
-                    Bios:"Cofounder, Bill & Melinda Gates Foundation",
-                    viewCount: 162897,
-                    uploadDate: "July 7, 2017",
-                    url: URL(string: "https://youtu.be/Y0qCWQDRWDw")!)
-        
-        
-    ]
-}
+//struct BillionaireList {
+//
+//    static let topTen = [
+//        Billionaire(imageName: "Image1",
+//                    FullName: "Elon Musk",
+//                    NetWorth: "265.69 B",
+//                    Country: "United States",
+//                    City: "Austin, Texas",
+//                    Age:"51",
+//                    Source:" Tesla, SpaceX",
+//                    Industry:"Automotion",
+//                    Bios: "CEO, Tesla",
+//                    viewCount:162897,
+//
+//                    uploadDate: "February 17, 2019",
+//                    url: URL(string: "https://www.forbes.com/profile/elon-musk")!),
+//
+//        Billionaire(imageName: "Image2",
+//                    FullName: "Bernard Arnault & family",
+//                    NetWorth: "172.17 B",
+//                    Country: "France",
+//                    City: "Paris, France",
+//                    Age: "73",
+//                    Source:"LVMH",
+//                    Industry: "Fashion",
+//                    Bios:"Chairman And CEO, LVMH Moët Hennessy Louis Vuitton",
+//
+//                    viewCount: 162897,
+//                    uploadDate: "May 6, 2017",
+//                    url: URL(string: "https://www.forbes.com/profile/bernard")!),
+//
+//        Billionaire(imageName: "Image3",
+//                    FullName: "Jeff Bezos",
+//                    NetWorth: "168.02 B",
+//                    Country: "United States",
+//                    City: "Seattle, Washington",
+//                    Age: "58",
+//                    Source:"Amazon",
+//                    Industry: "Technology",
+//                    Bios:"Chairman And Founder, Amazon",
+//                    viewCount: 162897,
+//                    uploadDate: "May 19, 2017",
+//                    url: URL(string: "https://www.forbes.com/profile/jeff-bezos")!),
+//
+//        Billionaire(imageName: "Image4",
+//                    FullName: "SGautam Adani & family",
+//                    NetWorth: "131.12 B",
+//                    Country: "India",
+//                    City: "Ahmedabad, India",
+//                    Age: "60",
+//                    Source:"infrastructure, commodities",
+//                    Industry: "infrastructure",
+//                    Bios:"Gautam Adani controls Mundra Port, India's largest, in his home state of Gujarat",
+//                    viewCount: 162897,
+//                    uploadDate: "May 21, 2017",
+//                    url: URL(string: "https://youtu.be/DBWu6TnhLeY")!),
+//
+//        Billionaire(imageName: "Image5",
+//                    FullName: "Bill Gates",
+//                    NetWorth: "114.23 B",
+//                    Country: "United States",
+//                    City: "Medina, Washington",
+//                    Age: "67",
+//                    Source:"Microsoft",
+//                    Industry: "Technology",
+//                    Bios:"Cofounder, Bill & Melinda Gates Foundation",
+//                    viewCount: 162897,
+//                    uploadDate: "July 7, 2017",
+//                    url: URL(string: "https://youtu.be/Y0qCWQDRWDw")!)
+//
+//
+//    ]
+//}
 
 
 
@@ -110,6 +110,7 @@ struct BillionaireList {
 import Foundation
 
 // MARK: - WelcomeElement
+
 struct WelcomeElement: Codable, Identifiable {
     let id = UUID()
     let name: Name
@@ -130,7 +131,7 @@ struct WelcomeElement: Codable, Identifiable {
     let position: Int
     let imageExists: Bool
     let gender: Gender?
-    let birthDate: Int?
+    let birthDate: Date?
     let lastName: String
     let financialAssets: [FinancialAsset]?
     let date: Int
@@ -155,6 +156,7 @@ struct WelcomeElement: Codable, Identifiable {
         case position, imageExists, gender, birthDate, lastName, financialAssets, date, wealthList, estWorthPrev, privateAssetsWorth, familyList, interactive, archivedWorth, thumbnail, squareImage, bioSuppress, csfDisplayFields, bios, abouts, portraitImage, landscapeImage
     }
 }
+
 
 enum CsfDisplayField: String, Codable {
     case age = "age"
@@ -213,10 +215,10 @@ enum Name: String, Codable {
 }
 
 // MARK: - Person
-struct Person: Codable {
-    let name, uri: String
-    let imageExists: Bool
-    let squareImage: String?
-}
+
+
+
 
 typealias Welcome = [WelcomeElement]
+
+

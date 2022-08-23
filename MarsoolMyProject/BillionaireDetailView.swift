@@ -12,27 +12,27 @@ struct BillionaireDetailView: View {
     var body: some View {
         VStack(spacing:20){
             Spacer()
-            Image(Billionaire.person.squareImage ?? "")
-                .resizable()
-                .scaledToFit()
-                .frame(height: 180)
-                .cornerRadius(12)
+//            Image(Billionaire.person.squareImage ?? "")
+//                .resizable()
+//                .scaledToFit()
+//                .frame(height: 100)
+//                .cornerRadius(12)
             Text(Billionaire.person.name)
                 .font(.title2)
                 .fontWeight(.semibold)
                 .lineLimit(2)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal)
-            
+            Text(Billionaire.bios[0])
+                .font(.subheadline)
+                .foregroundColor(.secondary)
             HStack(spacing: 40){
                 Label("\(Billionaire.countryOfCitizenship)", systemImage: "mappin.and.ellipse")
                     .font(.subheadline)
                     .foregroundColor(.secondary)
-                Text(Billionaire.bios[0])
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
-             
-                Text(Billionaire.industries[0].rawValue)
+               
+                Label("\(Billionaire.industries[0].rawValue)", systemImage: "globe.europe.africa")
+//                Text(Billionaire.industries[0].rawValue)
                     .font(.subheadline)
                     .foregroundColor(.secondary)
             }
@@ -44,7 +44,7 @@ struct BillionaireDetailView: View {
 //                .foregroundColor(.secondary)
             Spacer()
             Link(destination:URL(string: Billionaire.uri)!, label:  {
-                Text("watch now")
+                Text("Explore more")
                     .bold()
                     .font(.title2)
                     .frame(width: 270, height: 50)
