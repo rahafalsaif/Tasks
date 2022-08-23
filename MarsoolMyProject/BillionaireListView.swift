@@ -109,7 +109,7 @@ struct BillionaireListView: View {
                 
             }
             
-            .navigationTitle("Billionaire top 100")
+            .navigationTitle("Billionaires top 100")
             .onAppear(perform: loadData)
         }
         

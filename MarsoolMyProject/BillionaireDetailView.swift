@@ -49,6 +49,7 @@ struct BillionaireDetailView: View {
                     .font(.title2)
                     .frame(width: 270, height: 50)
                     .background(Color(.systemRed))
+                
                     .foregroundColor(.white)
                     .cornerRadius(10)
             })
